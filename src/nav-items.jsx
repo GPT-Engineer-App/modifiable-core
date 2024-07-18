@@ -1,6 +1,8 @@
-import { Home, Info } from "lucide-react";
+import { Home, Info, ListTodo, Clock } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import About from "./pages/About.jsx";
+import Todo from "./pages/Todo.jsx";
+import InProgress from "./pages/InProgress.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -20,14 +22,14 @@ export const navItems = [
   },
   {
     title: "TODO",
-    to: "/about",
-    icon: <Info className="h-4 w-4" />,
-    page: <About />,
+    to: "/todo",
+    icon: <ListTodo className="h-4 w-4" />,
+    page: <Todo />,
   },
   {
     title: "In Progress",
-    to: "/about",
-    icon: <Info className="h-4 w-4" />,
-    page: <About />,
+    to: "/in-progress",
+    icon: <Clock className="h-4 w-4" />,
+    page: <InProgress />,
   },
 ];
