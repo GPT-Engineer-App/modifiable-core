@@ -18,4 +18,10 @@ export const navItems = [
     icon: <Info className="h-4 w-4" />,
     page: <About />,
   },
+    {
+    title: "TODO",
+    to: "/about",
+    icon: <Info className="h-4 w-4" />,
+    page: <About />,
+  },
 ];
